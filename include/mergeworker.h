@@ -7,12 +7,12 @@ struct MergeWorkerParameters {
     using Record   = symqfile::QuoteRecord;
     using Symbols  = std::vector<std::string>;
 
-    size_t					stage{0};
+    size_t			stage{0};
     util::QuoteFileInfos	files;
-    Symbols					symbols;
-    std::string				outputFileName;
-    std::string				outputCsvHeader;
-    bool					numericTimestamp{false};
+    Symbols			symbols;
+    std::string			outputFileName;
+    std::string			outputCsvHeader;
+    bool			numericTimestamp{false};
 
 
     void add(WorkItem& item) {
