@@ -84,6 +84,7 @@ does it tries to divide files by size.
 So the design goal is primarily to reduce the total I/O. The secondary goal is to
 speed up the I/O so that the mergeWorker never blocks. Offloading the read/write to a separate subsystem is a good idea, but need to play with various implementation async i/o and mem-mapped I/O where one allocates a large address range and maps file pages to avoid system
 call overhead.
+<br>
 
 3. **whats  missing**
 I have tested this with what i could and can primarily on windows and did run on linux
