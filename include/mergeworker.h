@@ -10,8 +10,8 @@ struct MergeWorkerParameters {
     size_t			stage{0};
     util::QuoteFileInfos	files;
     Symbols			symbols;
-    std::string			outputFileName;
-    std::string			outputCsvHeader;
+    std::string		outputFileName;
+    std::string		outputCsvHeader;
     bool			numericTimestamp{false};
 
 
